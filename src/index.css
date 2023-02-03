@@ -1,4 +1,4 @@
-* {padding: 0; margin: 0; box-sizing: border-box; list-style: none;}
+* {padding: 0; margin: 0; box-sizing: border-box;}
 
 @font-face {
     font-family: 'GoyangIlsan';
@@ -11,4 +11,13 @@ body {
     font-family: 'GoyangIlsan', sans-serif;
     font-size: 16px;
     background-color: #082032;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }

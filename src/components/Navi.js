@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import "./Navi.scss";
 import { BiArrowToLeft } from "react-icons/bi";
 import { BiArrowToRight } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 
 const Navi = () => {
     // 메뉴 상태관리
-    const [isOpen, setOpen] = useState(false);
+    const [isOpen, setOpen] = useState(true);
     const toggleMenu = () => {
         setOpen(isOpen => !isOpen);
         console.log(isOpen);
@@ -18,7 +19,7 @@ const Navi = () => {
             <div className={isOpen ? 'show_menu move' : 'hide_menu move'}>
                 <ul className='navmenu'>
                     <li>
-                        <span>HOME</span>
+                        <Link to='/'><span>HOME</span></Link> 
                     </li>
                     <li>
                         <span>최신영화</span>
