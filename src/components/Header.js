@@ -4,9 +4,11 @@ import './Header.scss';
 import { CgSearch } from "react-icons/cg";
 
 const Header = () => {
+    
     return (
         <header>
             <Navi/>
+            <h1>logo</h1>
             <div className='searchbox'>
                 <input placeholder='search...'/>
                 <button>
