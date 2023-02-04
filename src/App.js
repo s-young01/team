@@ -3,9 +3,12 @@ import Header from './components/Header';
 import Main from './pages/Main';
 import JoinPage from './pages/member/JoinPage';
 
+
+
+
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <Header/>
       <Routes>
         <Route path='/' element={<Main/>}/>

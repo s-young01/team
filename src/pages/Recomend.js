@@ -18,7 +18,7 @@ export default class PauseOnHover extends Component {
     };
     return (
       <div className='inner latest'>
-        <h2>최신영화</h2>
+        <h2>추천영화</h2>
         <Slider {...settings} className='slider'>
           <div className="slide">
             <img src="images/The First Slam Dunk.jpg" alt=""/>
