@@ -11,6 +11,7 @@ body {
     font-family: 'GoyangIlsan', sans-serif;
     font-size: 16px;
     background-color: #082032;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -20,4 +21,20 @@ a {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+/* 스크롤바 설정*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+/* 스크롤바 막대 설정*/
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255,255,255,1);
+    /* 스크롤바 둥글게 설정    */
+    border-radius: 15px;    
+}
+
+/* 스크롤바 뒷 배경 설정*/
+::-webkit-scrollbar-track{
+    background-color: rgba(255,255,255,0.3);
 }

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import "./Navi.scss";
 import { BiArrowToLeft } from "react-icons/bi";
 import { BiArrowToRight } from "react-icons/bi";
-import { Link } from 'react-router-dom';
 
 const Navi = () => {
     // 메뉴 상태관리
@@ -18,9 +17,6 @@ const Navi = () => {
             </button>
             <div className={isOpen ? 'show_menu move' : 'hide_menu move'}>
                 <ul className='navmenu'>
-                    <li>
-                        <Link to='/'><span>HOME</span></Link> 
-                    </li>
                     <li>
                         <span>최신영화</span>
                         <div className='innermenu'>

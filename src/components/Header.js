@@ -8,18 +8,24 @@ const Header = () => {
     return (
         <header>
             <Navi/>
-            <Link to='/'><h1>logo</h1></Link>
-            <div className='searchbox'>
-                <input name='search' placeholder='Search...'/>
-                <button>
-                    <CgSearch className='searchicon'/>
-                </button>
+            <h1><Link to='/'>LOGO</Link></h1>
+            <div id='search'>
+                <div className='searchbox'>
+                    <input name='search' placeholder='Search...'/>
+                    <button>
+                        <CgSearch className='searchicon'/>
+                    </button>
+                </div>
             </div>
-            <ul className='membermenu'>
-                <Link to='login'><li>로그인</li></Link>
-                <span>|</span>
-                <Link to='join'><li>회원가입</li></Link>
-            </ul>
+            <div id='headermenu'>
+                <ul className='membermenu'>
+                    <li><Link to='/'>HOME</Link></li>
+                    <span>|</span>
+                    <li><Link to='login'>로그인</Link></li>
+                    <span>|</span>
+                    <li><Link to='join'>회원가입</Link></li>
+                </ul>
+            </div>
         </header>
     );
 };
