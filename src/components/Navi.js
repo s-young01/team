@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./Navi.scss";
 import { RiMenuFoldFill, RiMenuUnfoldFill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 const Navi = () => {
     // 메뉴 상태관리
@@ -17,7 +18,7 @@ const Navi = () => {
             <div className={isOpen ? 'show_menu move' : 'hide_menu move'}>
                 <ul className='navmenu'>
                     <li>
-                        <span>최신영화</span>
+                        <span><Link to='/latest'>최신영화</Link></span>
                         <div className='innermenu'>
                             <ul>
                                 <li>현재 상영작</li>

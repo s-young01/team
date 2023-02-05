@@ -16,7 +16,7 @@ const Imgs = styled.div`
             background-repeat: no-repeat;
             background-position: left center;
             width: 100%;
-            height: 800px;
+            height: 850px;
             `;
      
 
