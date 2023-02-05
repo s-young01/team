@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "./Navi.scss";
-import { BiArrowToLeft } from "react-icons/bi";
-import { BiArrowToRight } from "react-icons/bi";
+import { RiMenuFoldFill, RiMenuUnfoldFill } from "react-icons/ri";
 
 const Navi = () => {
     // 메뉴 상태관리
@@ -13,7 +12,7 @@ const Navi = () => {
     return (
         <nav>
             <button onClick={toggleMenu} className={isOpen ? 'close_btn navBtn' : 'open_btn navBtn'}>
-                {isOpen ? <BiArrowToRight className='navicon'/> : <BiArrowToLeft className='navicon'/>}
+                {isOpen ? <RiMenuUnfoldFill className='navicon'/> : <RiMenuFoldFill className='navicon'/>}
             </button>
             <div className={isOpen ? 'show_menu move' : 'hide_menu move'}>
                 <ul className='navmenu'>
